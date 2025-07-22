@@ -1,0 +1,102 @@
+<!doctype html>
+
+
+<html lang="en-gb" class="no-js">
+  <head>
+    <meta charset="utf-8">
+	<title>Group Key Management</title>
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+	<!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+     <!--styles -->
+    <link href="{{url_for('static',filename='css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{url_for('static',filename='css/font-awesome.css')}}" rel="stylesheet">
+    <link href="{{url_for('static',filename='js/owl-carousel/owl.carousel.css')}}" rel="stylesheet">
+    <link href="{{url_for('static',filename='js/owl-carousel/owl.theme.css')}}" rel="stylesheet">
+    <link href="{{url_for('static',filename='js/owl-carousel/owl.transitions.css')}}" rel="stylesheet">
+    <link href="{{url_for('static',filename='css/magnific-popup.css')}}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{url_for('static',filename='css/animate.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static',filename='css/etlinefont.css')}}">
+    <link href="{{url_for('static',filename='css/style.css')}}" type="text/css"  rel="stylesheet"/>
+
+
+   <!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+        <script src="static/js/html5shiv.js"></script>
+        <script src="static/js/respond.min.js"></script>
+        <![endif]-->
+
+	<body  data-spy="scroll" data-target="#main-menu">
+
+
+  <!--Start Page loader -->
+
+   <!--End Page loader -->
+
+
+   <!--Start Navigation-->
+		<header id="header">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="fa fa-bars"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+                            <!--Start Logo -->
+							<div class="logo-nav">
+								<a href="index.html">
+
+								</a>
+							</div>
+                            <!--End Logo -->
+							<div class="clear-toggle"></div>
+							<div id="main-menu" class="collapse scroll navbar-right">
+								<ul class="nav">
+                                  <li class="active"> <a style="color:red;" href="#home">Home</a> </li>
+									<li> <a style="color:red;" href="{{url_for('group')}}">View Groups</a> </li>
+                                    <li> <a style="color:red;" href="{{url_for('vmg')}}">View My Groups</a> </li>
+                                    <li> <a style="color:red;" href="{{url_for('uploadfiles')}}">Upload Files</a> </li>
+                                    <li> <a style="color:red;" href="{{url_for('myfiles')}}">View Files</a> </li>
+                                    <li> <a style="color:red;" href="{{url_for('sendmessage')}}">Send Messages</a> </li>
+                                    <li> <a style="color:red;" href="/">Logout</a> </li>
+								</ul>
+							</div><!-- end main-menu -->
+						</div>
+					</div>
+				</div>
+			</header>
+            <section id="facts" class="section parallax">
+                <center>
+                            <h2>File Upload Page</h2>
+                         <form action="" method="post" >
+                            <div>
+                                <textarea id="w3review" name="w3review" rows="4" cols="50" style="width:500px;">{{ msg }}</textarea>
+                            </div>
+                            <h3> <a href="{{url_for('myfiles')}}">Back</a></h3>
+
+
+                         </form>
+                    </center>
+            </section>
+  <script type="{{url_for('static',filename='text/javascript')}}" src="js/jquery-1.11.1.min.js"></script>
+    <script type="{{url_for('static',filename='text/javascript')}}" src="js/bootstrap.min.js"></script>
+    <script type="{{url_for('static',filename='text/javascript')}}" src="js/owl-carousel/owl.carousel.js"></script>
+    <script type="{{url_for('static',filename='text/javascript')}}" src="js/jquery.flexslider-min.js"></script>
+    <script type="{{url_for('static',filename='text/javascript')}}" src="js/jquery.magnific-popup.min.js"></script>
+    <script type="{{url_for('static',filename='text/javascript')}}" src="js/easing.js"></script>
+    <script type="{{url_for('static',filename='text/javascript')}}" src="js/jquery.easypiechart.js"></script>
+    <script type="{{url_for('static',filename='text/javascript')}}" src="js/jquery.appear.js"></script>
+    <script type="{{url_for('static',filename='text/javascript')}}" src="js/jquery.parallax-1.1.3.js"></script>
+    <script type="{{url_for('static',filename='text/javascript')}}" src="js/jquery.mixitup.min.js"></script>
+    <script type="{{url_for('static',filename='text/javascript')}}" src="js/custom.js"></script>
+
+ </body>
+</html>
